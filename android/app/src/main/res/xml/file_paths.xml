@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- FileProvider 只在把文件分享给别的 App 时才会用到；本程序导出走 WebView 文本框，
+     没有分享逻辑，因此这里只保留应用私有缓存目录，不再把整个外部存储（原 path="."）暴露出去。 -->
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <cache-path name="my_cache_images" path="." />
+</paths>
